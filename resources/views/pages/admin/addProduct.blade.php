@@ -36,8 +36,8 @@
                         <div class="col-lg-12 mb-4">
                             <select name="category"
                                 class="form-control mx-auto @error('category') border border-danger @enderror">
-                                <option value="null" selected>Category</option>
-                                <option value="Footwear">Footwear</option>
+                                {{-- <option value="null" selected>Category</option> --}}
+                                <option value="Jeans">Jeans</option>
                                 <option value="Huddy">Huddy</option>
                                 <option value="T-Shirt">T-Shirt</option>
                                 <option value="Bag">Bag</option>

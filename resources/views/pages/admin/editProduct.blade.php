@@ -42,7 +42,7 @@
                         <div class="col-lg-12 mb-4">
                             <select name="category"
                                 class="form-control mx-auto @error('category') border border-danger @enderror">
-                                <option value="Footwear" {{ $product->category == 'Footwear' ? 'selected' : '' }}>Footwear
+                                <option value="Jeans" {{ $product->category == 'Jeans' ? 'selected' : '' }}>Jeans
                                 </option>
                                 <option value="Huddy" {{ $product->category == 'Huddy' ? 'selected' : '' }}>Huddy</option>
                                 <option value="T-Shirt" {{ $product->category == 'T-Shirt' ? 'selected' : '' }}>T-Shirt
