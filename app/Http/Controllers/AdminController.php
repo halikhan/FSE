@@ -147,6 +147,7 @@ class AdminController extends Controller
         $this->authorize('adminAccess', Auth::user());
         //
         $user->role = $request->role;
+        $user->is_active = 1;
         $user->save();
         return redirect()->back();
     }

@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FSE Admin</title>
+    <title>FSE-Fashion | Online Store</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href={{ asset('admin/vendors/feather/feather.css') }}>
     <link rel="stylesheet" href={{ asset('admin/vendors/ti-icons/css/themify-icons.css') }}>
@@ -53,7 +53,8 @@
                     
                     <li class="nav-item nav-profile dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                            <img src={{ auth()->user()->picture }}alt="profile" />
+                            <img src={{ auth()->user()->picture ?? asset('img/No-image.jpg') }}alt="profile" />
+                      
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
                             aria-labelledby="profileDropdown">

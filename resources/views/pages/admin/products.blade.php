@@ -28,7 +28,10 @@
                                     <tr>
                                         <td>{{ $item->id }}</td>
                                         <td>{{ $item->title }}</td>
-                                        <td><img src={{ $item->picture }} alt=""></td>
+                                        <td>
+                                            {{-- <img src={{ $item->picture }} alt=""> --}}
+                                            <img src={{ $item->picture  ?? asset('img/No-image.jpg') }}alt="Product" />
+                                        </td>
                                         <td class="font-weight-bold">${{ $item->price }}</td>
                                         <td>{{ $item->quantity }}</td>
                                         <td class="font-weight-medium">

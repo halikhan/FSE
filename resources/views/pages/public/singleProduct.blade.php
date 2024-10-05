@@ -51,17 +51,21 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src={{ $product->picture }} alt="">
+                                    {{-- <img src={{ $product->picture }} alt=""> --}}
+                                    <img src={{ $product->picture  ?? asset('img/No-image.jpg') }}alt="Product" />
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src={{ $product->picture }} alt="">
+                                    <img src={{ $product->picture  ?? asset('img/No-image.jpg') }}alt="Product" />
+
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src={{ $product->picture }} alt="">
+                                    <img src={{ $product->picture  ?? asset('img/No-image.jpg') }}alt="Product" />
+
                                 </div>
                             </div>
                         </div>
