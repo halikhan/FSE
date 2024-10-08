@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HeroSectionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,5 @@ Route::delete('admin/user/delete/{user}', [AdminController::class, 'deleteUser']
 Route::get('admin-orders', [AdminController::class, 'adminOrdersView'])->name('adminOrdersPage');
 Route::get('admin-order/details/{order}', [AdminController::class, 'adminOrderDetailsView'])->name('adminOrderDetailsPage');
 Route::patch('admin-order/update/{order}', [AdminController::class, 'adminOrderUpdate'])->name('adminOrderUpdate');
+
+Route::resource('hero-sections', HeroSectionController::class);

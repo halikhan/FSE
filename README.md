@@ -92,7 +92,11 @@ The `UserSeeder` populates the `users` table with the following default users:
   ```bash
   php artisan cache:clear
   ```
+## Adding Storage Link (Optional)
 
+  ```bash
+  php artisan storage:link
+  ```
 ## Troubleshooting
 
 If you encounter any issues, try the following commands:

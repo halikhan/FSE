@@ -298,6 +298,21 @@
                         </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon"></i>
+                            <span class="menu-title">Banners</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic1">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href={{ route('hero-sections.index') }}>View All</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
                             aria-controls="form-elements">
                             <i class="icon-columns menu-icon"></i>

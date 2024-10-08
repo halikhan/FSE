@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\HeroSection;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,8 @@ class MainController extends Controller
     public function index()
     {
         $products = Product::all()->take(8);
-        return view('pages.public.index', compact('products'));
+        $heros = HeroSection::all();
+        return view('pages.public.index', get_defined_vars());
     }
 
     public function indexRediredt()

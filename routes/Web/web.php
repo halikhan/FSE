@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\HeroSectionController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,4 +29,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/cart', [CartController::class, 'addToCart'])->name('addToCart');
     Route::patch('/cart/{cart}', [CartController::class, 'updateCart'])->name('updateCart');
     Route::delete('/cart/{cart}', [CartController::class, 'deleteCart'])->name('deleteCart');
+
 });
